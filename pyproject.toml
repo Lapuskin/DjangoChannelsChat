@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "signals"
+version = "0.1.0"
+description = "test project for practice with signals in Django"
+authors = ["lapuskin <mikhail.lapkovskiy.2004@mail.ru>"]
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.1"
+uvicorn = "^0.30.6"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+[tool.poetry.scripts]
+run-server = 'uvicorn justsignals.asgi:application'
